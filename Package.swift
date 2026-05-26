@@ -6,7 +6,7 @@ let package = Package(
   platforms: [.macOS(.v14)],
   products: [.library(name: "GatewayTrustKit", targets: ["GatewayTrustKit"])],
   dependencies: [
-    .package(path: "../atproto-primitive-kit"),
+    .package(url: "https://github.com/Stygian-Tech/atproto-primitive-kit.git", branch: "main"),
     .package(url: "https://github.com/apple/swift-crypto.git", from: "3.14.0"),
   ],
   targets: [
