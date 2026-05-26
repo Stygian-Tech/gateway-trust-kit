@@ -2,7 +2,7 @@
 
 Gateway-to-service HMAC trust signing and verification (Gateway ↔ AppView), plus future CORS and authenticated proxy helpers.
 
-Depends on [atproto-primitives](../atproto-primitives).
+Depends on [atproto-primitive-kit](../atproto-primitive-kit).
 
 ## Development
 

@@ -1,6 +1,6 @@
 import Crypto
 import Foundation
-import AtprotoPrimitives
+import ATProtoPrimitiveKit
 
 /// HMAC trust boundary between the public Gateway and private AppView service.
 public enum GatewayInternalTrust {

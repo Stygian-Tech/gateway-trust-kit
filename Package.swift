@@ -6,14 +6,14 @@ let package = Package(
   platforms: [.macOS(.v14)],
   products: [.library(name: "GatewayTrustKit", targets: ["GatewayTrustKit"])],
   dependencies: [
-    .package(path: "../atproto-primitives"),
+    .package(path: "../atproto-primitive-kit"),
     .package(url: "https://github.com/apple/swift-crypto.git", from: "3.14.0"),
   ],
   targets: [
     .target(
       name: "GatewayTrustKit",
       dependencies: [
-        .product(name: "AtprotoPrimitives", package: "atproto-primitives"),
+        .product(name: "ATProtoPrimitiveKit", package: "atproto-primitive-kit"),
         .product(name: "Crypto", package: "swift-crypto"),
       ],
       path: "Sources/GatewayTrustKit",
