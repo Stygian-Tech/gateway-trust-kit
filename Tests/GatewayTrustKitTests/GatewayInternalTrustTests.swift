@@ -1,4 +1,4 @@
-import StygianGatewayKit
+import GatewayTrustKit
 import Testing
 
 @Suite("GatewayInternalTrust")

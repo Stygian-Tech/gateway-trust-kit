@@ -1,3 +1,16 @@
-# stygian-gateway-kit
+# gateway-trust-kit
 
-Hummingbird gateway foundations: internal HMAC trust, CORS helpers, and authenticated proxy primitives.
+Gateway-to-service HMAC trust signing and verification (Gateway ↔ AppView), plus future CORS and authenticated proxy helpers.
+
+Depends on [atproto-primitives](../atproto-primitives).
+
+## Development
+
+```bash
+scripts/bootstrap.sh
+scripts/check.sh
+```
+
+## License
+
+MIT

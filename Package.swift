@@ -2,27 +2,27 @@
 import PackageDescription
 
 let package = Package(
-  name: "stygian-gateway-kit",
+  name: "gateway-trust-kit",
   platforms: [.macOS(.v14)],
-  products: [.library(name: "StygianGatewayKit", targets: ["StygianGatewayKit"])],
+  products: [.library(name: "GatewayTrustKit", targets: ["GatewayTrustKit"])],
   dependencies: [
-    .package(path: "../stygian-core"),
+    .package(path: "../atproto-primitives"),
     .package(url: "https://github.com/apple/swift-crypto.git", from: "3.14.0"),
   ],
   targets: [
     .target(
-      name: "StygianGatewayKit",
+      name: "GatewayTrustKit",
       dependencies: [
-        .product(name: "StygianCore", package: "stygian-core"),
+        .product(name: "AtprotoPrimitives", package: "atproto-primitives"),
         .product(name: "Crypto", package: "swift-crypto"),
       ],
-      path: "Sources/StygianGatewayKit",
+      path: "Sources/GatewayTrustKit",
       swiftSettings: [.swiftLanguageMode(.v6)]
     ),
     .testTarget(
-      name: "StygianGatewayKitTests",
-      dependencies: ["StygianGatewayKit"],
-      path: "Tests/StygianGatewayKitTests",
+      name: "GatewayTrustKitTests",
+      dependencies: ["GatewayTrustKit"],
+      path: "Tests/GatewayTrustKitTests",
       swiftSettings: [.swiftLanguageMode(.v6)]
     ),
   ]

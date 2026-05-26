@@ -1,6 +1,6 @@
 import Crypto
 import Foundation
-import StygianCore
+import AtprotoPrimitives
 
 /// HMAC trust boundary between the public Gateway and private AppView service.
 public enum GatewayInternalTrust {
